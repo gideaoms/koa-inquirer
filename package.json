@@ -1,6 +1,6 @@
 {
   "name": "koa-inquirer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "build/index.js",
   "license": "MIT",
   "author": {
@@ -13,6 +13,7 @@
   "devDependencies": {
     "@types/hapi__joi": "^17.1.4",
     "@types/koa": "^2.11.3",
+    "@types/koa-bodyparser": "^4.3.0",
     "@typescript-eslint/eslint-plugin": "^3.7.1",
     "@typescript-eslint/parser": "^3.7.1",
     "eslint": "^7.5.0",
