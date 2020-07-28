@@ -3,7 +3,7 @@ import { ValidationError, ObjectSchema } from '@hapi/joi'
 
 declare module 'koa' {
   interface Request {
-    validate: <T>(schema: ObjectSchema<any>, data?: any) => T
+    validate: <T extends any>(schema: ObjectSchema<any>, data?: any) => T
   }
 }
 
