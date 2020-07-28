@@ -24,7 +24,7 @@ const inquirer = async ({ request, response }: Context, next: Next) => {
     if (error instanceof ValidationError) {
       response.status = 400
       response.body = {
-        messages: error.details
+        messages: error.details.map(({ message, path, type }) => ({ message, path, type }))
       }
     } else {
       throw error
