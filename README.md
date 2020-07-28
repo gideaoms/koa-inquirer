@@ -22,14 +22,13 @@ server.listen(3000)
 
 ### controllers/example.js
 ```js
-const { validate } = require('koa-inquirer')
 const Joi = require('@hapi/joi')
 
 module.exports = ({ request }) => {
   const schema = Joi.object({
     name: Joi.string().required()
   })
-  const validated = validate(schema, request.body)
+  const validated = request.validate(schema) // it will validate request.body, but you can pass other one. ex: validate(schema, request.params)
   ...
 }
 ```
