@@ -8,7 +8,8 @@
   },
   "types": "build",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "public": "yarn build && npm publish"
   },
   "devDependencies": {
     "@types/hapi__joi": "^17.1.4",
